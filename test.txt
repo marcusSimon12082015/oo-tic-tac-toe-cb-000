@@ -19,3 +19,52 @@
       returns true/false based on whether the position is already occupied
       checks that the attempted move is within the bounds of the game board
     #turn_count
+      counts occupied positions
+    #current_player
+      returns the correct player, X, for the third move
+      returns the correct player, O, for the fourth move
+    #turn
+      receives user input via the gets method
+      calls #input_to_index, #valid_move?, and #current_player
+      makes valid moves and displays the board
+      asks for input again after a failed validation
+    #won?
+      returns false for a draw
+      returns the winning combo for a win
+    #full?
+      returns true for a draw
+      returns false for an in-progress game
+    #draw?
+      returns true for a draw
+      returns false for a won game
+      returns false for an in-progress game
+    #over?
+      returns true for a draw
+      returns true for a won game
+      returns false for an in-progress game
+    #winner
+      return X when X won
+      returns O when O won
+      returns nil when no winner
+
+./lib/tic_tac_toe.rb
+  TicTacToe
+    #play
+      asks for players input on a turn of the game (FAILED - 1)
+
+Failures:
+
+  1) ./lib/tic_tac_toe.rb TicTacToe#play asks for players input on a turn of the game
+     Failure/Error: game.play
+
+     NoMethodError:
+       undefined method `play' for #<TicTacToe:0x00000001564720>
+     # ./spec/02_play_spec.rb:13:in `block (4 levels) in <top (required)>'
+
+Finished in 0.03905 seconds (files took 0.19027 seconds to load)
+31 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/02_play_spec.rb:6 # ./lib/tic_tac_toe.rb TicTacToe#play asks for players input on a turn of the game
+

@@ -80,5 +80,15 @@ class TicTacToe
       @board[winning_combination.first]
     end
   end
-
+  def play
+    until over?
+      turn
+    end
+    if won?
+      puts "Congratulations #{winner}!"
+    end
+    if draw?
+      puts "Cat's Game!"
+    end
+  end
 end
