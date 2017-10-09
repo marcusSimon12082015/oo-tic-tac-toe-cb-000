@@ -6,31 +6,6 @@
     WIN_COMBINATIONS
       defines a constant WIN_COMBINATIONS with arrays for each win combination
     #display_board
-      prints arbitrary arrangements of the board (FAILED - 1)
-
-Failures:
-
-  1) ./lib/tic_tac_toe.rb TicTacToe#display_board prints arbitrary arrangements of the board
-     Failure/Error:
-       def display_board(board)
-         puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
-         puts "-----------"
-         puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
-         puts "-----------"
-         puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
-       end
-
-     ArgumentError:
-       wrong number of arguments (given 0, expected 1)
-     # ./lib/tic_tac_toe.rb:15:in `display_board'
-     # ./spec/01_tic_tac_toe_spec.rb:33:in `block (5 levels) in <top (required)>'
-     # ./spec/spec_helper.rb:32:in `capture_puts'
-     # ./spec/01_tic_tac_toe_spec.rb:33:in `block (4 levels) in <top (required)>'
-
-Finished in 0.008 seconds (files took 0.18578 seconds to load)
-3 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/01_tic_tac_toe_spec.rb:28 # ./lib/tic_tac_toe.rb TicTacToe#display_board prints arbitrary arrangements of the board
-
+      prints arbitrary arrangements of the board
+    #input_to_index
+      accepts the user's input (a string) as an argument (FAILED - 1)
