@@ -41,17 +41,17 @@ class TicTacToe
   def turn(board)
     puts "Enter 1-9:"
     input = gets.strip
-    index = input_to_index(input)
+    @index = input_to_index(input)
     valid = nil
     loop do
-      if valid_move?(index)
-        move(index,current_player)
+      if valid_move?(@index)
+        move(@index,current_player)
         display_board
         valid = true
       else
         puts "Enter 1-9:"
         input = gets.strip
-        index = input_to_index(input)
+        @index = input_to_index(input)
       end
       if valid == true
         break
