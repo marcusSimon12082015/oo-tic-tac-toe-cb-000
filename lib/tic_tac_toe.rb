@@ -75,5 +75,10 @@ class TicTacToe
   def over?
     won? || draw?
   end
+  def winner
+    if winning_combination = won?
+      @board[winning_combination.first]
+    end
+  end
 
 end
