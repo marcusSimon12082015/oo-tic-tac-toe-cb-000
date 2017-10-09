@@ -2,26 +2,6 @@
 ./lib/tic_tac_toe.rb
   TicTacToe
     #initialize
-      assigns an instance variable @board to an array with 9 blank spaces " " (FAILED - 1)
-
-Failures:
-
-  1) ./lib/tic_tac_toe.rb TicTacToe#initialize assigns an instance variable @board to an array with 9 blank spaces " "
-     Failure/Error:
-       def initialize(board)
-         @board = Array.new(9," ")
-       end
-
-     ArgumentError:
-       wrong number of arguments (given 0, expected 1)
-     # ./lib/tic_tac_toe.rb:2:in `initialize'
-     # ./spec/01_tic_tac_toe_spec.rb:7:in `new'
-     # ./spec/01_tic_tac_toe_spec.rb:7:in `block (4 levels) in <top (required)>'
-
-Finished in 0.00116 seconds (files took 0.17302 seconds to load)
-1 example, 1 failure
-
-Failed examples:
-
-rspec ./spec/01_tic_tac_toe_spec.rb:6 # ./lib/tic_tac_toe.rb TicTacToe#initialize assigns an instance variable @board to an array with 9 blank spaces " "
-
+      assigns an instance variable @board to an array with 9 blank spaces " "
+    WIN_COMBINATIONS
+      defines a constant WIN_COMBINATIONS with arrays for each win combination (FAILED - 1)
