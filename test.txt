@@ -1,0 +1,29 @@
+
+./lib/tic_tac_toe.rb
+  TicTacToe
+    #initialize
+      assigns an instance variable @board to an array with 9 blank spaces " "
+    WIN_COMBINATIONS
+      defines a constant WIN_COMBINATIONS with arrays for each win combination
+    #display_board
+      prints arbitrary arrangements of the board (FAILED - 1)
+
+Failures:
+
+  1) ./lib/tic_tac_toe.rb TicTacToe#display_board prints arbitrary arrangements of the board
+     Failure/Error: output = capture_puts{ game.display_board }
+
+     NoMethodError:
+       undefined method `display_board' for #<TicTacToe:0x000000017c41a0>
+       Did you mean?  display
+     # ./spec/01_tic_tac_toe_spec.rb:33:in `block (5 levels) in <top (required)>'
+     # ./spec/spec_helper.rb:32:in `capture_puts'
+     # ./spec/01_tic_tac_toe_spec.rb:33:in `block (4 levels) in <top (required)>'
+
+Finished in 0.00494 seconds (files took 0.16063 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/01_tic_tac_toe_spec.rb:28 # ./lib/tic_tac_toe.rb TicTacToe#display_board prints arbitrary arrangements of the board
+
