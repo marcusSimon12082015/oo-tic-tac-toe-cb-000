@@ -13,3 +13,20 @@
       converts the user's input from the user-friendly format (on a 1-9 scale) to the array-friendly format (where the first index starts at 0)
     #move
       allows "X" player in the top left and "O" in the middle (FAILED - 1)
+
+Failures:
+
+  1) ./lib/tic_tac_toe.rb TicTacToe#move allows "X" player in the top left and "O" in the middle
+     Failure/Error: game.move(0, "X")
+
+     NoMethodError:
+       undefined method `move' for #<TicTacToe:0x00000001e68858>
+     # ./spec/01_tic_tac_toe_spec.rb:76:in `block (4 levels) in <top (required)>'
+
+Finished in 0.01613 seconds (files took 0.19334 seconds to load)
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/01_tic_tac_toe_spec.rb:74 # ./lib/tic_tac_toe.rb TicTacToe#move allows "X" player in the top left and "O" in the middle
+
