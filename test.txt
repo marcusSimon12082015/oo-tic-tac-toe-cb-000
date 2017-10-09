@@ -14,31 +14,3 @@
     #move
       allows "X" player in the top left and "O" in the middle
     #position_taken?
-      returns true/false based on whether the position on the board is already occupied
-    #valid_move?
-      returns true/false based on whether the position is already occupied
-      checks that the attempted move is within the bounds of the game board
-    #turn_count
-      counts occupied positions
-    #current_player
-      returns the correct player, X, for the third move
-      returns the correct player, O, for the fourth move
-    #turn
-      receives user input via the gets method (FAILED - 1)
-
-Failures:
-
-  1) ./lib/tic_tac_toe.rb TicTacToe#turn receives user input via the gets method
-     Failure/Error: game.turn
-
-     NoMethodError:
-       undefined method `turn' for #<TicTacToe:0x00000001d611f8>
-     # ./spec/01_tic_tac_toe_spec.rb:165:in `block (4 levels) in <top (required)>'
-
-Finished in 0.03091 seconds (files took 0.20591 seconds to load)
-14 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/01_tic_tac_toe_spec.rb:161 # ./lib/tic_tac_toe.rb TicTacToe#turn receives user input via the gets method
-

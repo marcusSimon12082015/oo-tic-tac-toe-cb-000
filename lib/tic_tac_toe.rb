@@ -57,5 +57,5 @@ class TicTacToe
         break
       end
     end
-  end  
+  end
 end
