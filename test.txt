@@ -8,22 +8,8 @@
     #display_board
       prints arbitrary arrangements of the board
     #input_to_index
-      accepts the user's input (a string) as an argument (FAILED - 1)
-
-Failures:
-
-  1) ./lib/tic_tac_toe.rb TicTacToe#input_to_index accepts the user's input (a string) as an argument
-     Failure/Error: expect{game.input_to_index}.to raise_error(ArgumentError)
-
-       expected ArgumentError, got #<NoMethodError: undefined method `input_to_index' for #<TicTacToe:0x00000001542788>> with backtrace:
-         # ./spec/01_tic_tac_toe_spec.rb:58:in `block (5 levels) in <top (required)>'
-         # ./spec/01_tic_tac_toe_spec.rb:58:in `block (4 levels) in <top (required)>'
-     # ./spec/01_tic_tac_toe_spec.rb:58:in `block (4 levels) in <top (required)>'
-
-Finished in 0.02903 seconds (files took 0.20582 seconds to load)
-4 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/01_tic_tac_toe_spec.rb:56 # ./lib/tic_tac_toe.rb TicTacToe#input_to_index accepts the user's input (a string) as an argument
-
+      accepts the user's input (a string) as an argument
+      converts the user's input (a string) into an integer
+      converts the user's input from the user-friendly format (on a 1-9 scale) to the array-friendly format (where the first index starts at 0)
+    #move
+      allows "X" player in the top left and "O" in the middle (FAILED - 1)
